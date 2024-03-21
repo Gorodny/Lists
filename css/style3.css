@@ -1,0 +1,30 @@
+body{
+    background-color: darkblue;
+}
+p{
+    background: linear-gradient(to left,blue, red, purple);
+    font-size: 50px;
+    color: blanchedalmond;
+}
+ul, ol, dl{
+    font-size: 30px;
+    color: skyblue;
+}
+ul.u1, ol li::marker{
+    color: blueviolet;
+    font-size: 25px;
+}
+.u2 li{
+    padding-left: 10px;
+}
+ol{
+    margin-left: 35px;
+}
+@counter-style symbols{
+    system: cyclic;
+    symbols: ☻ ♣;
+    suffix: " ";
+}
+ul.u3{
+    list-style: symbols;
+}
